@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:0px;
+            margin:0px;
+        }
+        #navbar{
+            width:100%;
+            display:flex;
+            justify-content:space-around;
+            align-items: center;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 30px;
+        }
+        #navbar>div:first-child{
+            margin-left:-100px;
+            width:10%;
+        }    
+        #navbar>div:first-child>h1{
+            margin:0px;
+            font-size: 25px;
+            font-family: "Open sans", Arial, sans-serif;
+            font-weight: bolder;
+            color:white;
+            padding:15px 15px; 
+            background-image: linear-gradient(to right, mediumorchid , royalblue);
+        }
+        #navbar>div:last-child{
+            font-weight: bolder;
+            font-size:18px;
+            width:45%;
+            font-family: "Open sans";
+            display:flex;
+            justify-content: space-evenly;
+        }
+        #navbar>div:last-child>div:first-child{
+            color:cornflowerblue;
+        }
+        #container{
+            width:95%;
+            margin:auto;
+            padding:30px;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #container>div:first-child{
+            width:40%;
+            margin-left:20px;
+            padding:5px;
+        }
+        #container>div:first-child>h1{
+            font-weight: bolder;
+            font-size: 30px;
+            font-family: "Poppin";
+        }
+        #container>div:first-child>p{
+            font-size: 20px;
+            color:darkgray;
+            line-height: 30px;
+        }
+        h4{
+            letter-spacing: -1px;
+            font-family: "Open sans";
+            color:cornflowerblue;
+            margin:10px 0px -10px 0px;
+        }
+        #container>div:first-child>div{
+            margin-top:30px;
+            display:flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+        #container>div:first-child>div>img{
+            width:35%;
+            margin-right:20px;
+        }
+        img+p{
+            line-height: 25px;
+            font-size:18px
+        }
+        
+        #container>div:last-child{
+            width:50%;
+            padding:10px;
+        }
+        #container>div:last-child>div{
+            display:flex;
+            justify-content: space-evenly;
+            width:100%;
+            align-items: space-evenly;
+        }
+        #container>div:last-child>div>div{
+            width:30%;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding:30px;
+        }
+        #container>div:last-child>div:last-child{
+            margin-top: 30px;
+        }
+        #container>div:last-child img{
+           width:50%;
+           border-radius: 50px;
+        }
+        #container>div:last-child>div>div>p{
+            font-size: 18px;
+            color:darkgray;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div><h1>StudyLab</h1></div>
+        <div>
+            <div>Home</div>
+            <div>About</div>
+            <div>Course</div>
+            <div>Instructor</div>
+            <div>Blog</div>
+            <div>Contact</div>
+        </div>
+    </div>
+    <div id="container">
+        <div>
+            <h4>WELCOME TO STUDY LAB</h4>
+            <h1>We Are StudyLab An Online Learning Center</h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a aparadisematic country, in which roasted parts of sentences fly into your mouth</p>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Seperated they live in bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <div>
+                <img src="https://pbs.twimg.com/media/Eylbg_xWQAM50tY.jpg">
+                <h3>Learn anything from StudyLab, Watch video</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <img src="https://writtent.com/blog/wp-content/uploads/2014/05/quality-approved.jpg">
+                    <h3>Top Quality Content</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div>
+                    <img src="data:image/png;base64,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">
+                    <h3>High Skilled Instructor </h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/MOT_Test_-_Logo.svg/1200px-MOT_Test_-_Logo.svg.png">
+                    <h3>World Class & Quiz</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://www.freepnglogos.com/uploads/certified-png/circular-label-with-certified-stamp-icons-14.png">
+                    <h3>Get Certified</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
